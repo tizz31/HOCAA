@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOCAA</title>
+    <link rel="stylesheet" href="hoca.css">
+
+</head>
+<script>
+    var backgrounds = ['background1.jpg', 'background2.jpg', 'background3.jpg', 'background4.jpg'];
+    var audio = new Audio('music.mp3');
+    
+    function changeBackground() {
+      var currentBackground = backgrounds.shift();
+      backgrounds.push(currentBackground);
+      document.body.style.backgroundImage = "url('" + backgrounds[0] + "')";
+    }
+    
+    function toggleMusic() {
+      audio.paused ? audio.play() : audio.pause();
+    }
+    </script>
+    
+<body>
+
+<img class="diver1" src="diver1.png" alt="Diver 1">
+<img class="diver2" src="diver2.png" alt="Diver 2">
+<img class="diver3" src="diver3.png" alt="Diver 3">
+<img class="shark" src="shark.png" alt="Shark">
+<img class="turtle" src="turtle.png" alt="Turtle">
+<img class="faintSchool" src="faintSchool.png" alt="Faint School">
+<img class="goldfishSchool" src="goldfishSchool.png" alt="Goldfish School">
+
+<button class="button" id="backgroundButton" onclick="changeBackground()">Change Background</button>
+<button class="button" id="musicButton" onclick="toggleMusic()">Plays Music</button>
+
+</body>
+</html>
+
