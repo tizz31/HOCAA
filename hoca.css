@@ -1,0 +1,93 @@
+
+body {
+  background-image: url('background1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.diver1{
+  position: absolute;
+  bottom: 0;
+  animation: diverSwim 10s infinite;
+}
+.diver2{
+    position: absolute;
+    bottom: 0;
+    animation: diverSwim2 7s infinite;
+  }
+.diver3{
+    position: absolute;
+    bottom: 0;
+    animation: diverSwim3 4s infinite;
+  }
+
+.turtle{
+    position: absolute;
+    bottom: 0;
+    animation: swim 8s infinite;
+  }
+.shark {
+  position: absolute;
+  bottom: 40px;
+  animation: swim2 4S infinite;
+}
+
+.faintSchool  {
+  position: absolute;
+  bottom: 0;
+  animation: bubble 5s infinite;
+}
+.goldfishSchool{
+    position: absolute;
+    bottom: 0;
+    animation: swim 3s infinite;
+  }
+.button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#backgroundButton {
+  margin-right: 100px;
+}
+
+@keyframes swim {
+    0% { left: 0;bottom: 20 }
+    50% { left: 80%; bottom: 0px;}
+    100% { left: 0;transform:scaleX(-1); }
+}
+
+@keyframes bubble 
+{
+  0% { bottom: 40%; }
+  50% { bottom: 90%; }
+  100% { left: 60%;transform:scaleX(-1); }
+}
+@keyframes diverSwim {
+  0% { left: 0; bottom: 0; }
+  30% { left: 80%; bottom: 300px; }
+  100% { left: 0; bottom: 0;transform:scaleX(-1); }
+}
+@keyframes diverSwim2 {
+  0% { left: 0; bottom: 10; }
+  50% { left: 80%; bottom: 100px; }
+  100% { left: 0; bottom: 0;transform:scaleX(-1); }
+}
+@keyframes diverSwim3 {
+  0% { left: 0; bottom: 0; }
+  50% { left: 80%; bottom: 500px; }
+  100% { left: 0; bottom: 0;transform:scaleX(-1); }
+}
+
+@keyframes swim2 {
+    0% {  left:  100px;top:400px  }
+    20% { left: 300px;top:400px  }
+    40% { left:  500px;top:300px  }
+    50% { left: 600px;top: 50px;   }
+    60% { left: 600px;top:100px  }
+    80% { left: 500px;top:200px  }
+    100% { left: 100px;top:400px;transform:scaleX(-1);   }
+}
